@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- __________________ CSS For Login Page _____________________ -->
+    <style>
+    body{
+      background-image:url("image.jpg");
+    }
+    h1{
+      text-align: center;
+      color:dodgerblue;
+      border-bottom: 2px solid Black;
+      padding-bottom: 15px;
+    }
+    .container{
+      background-color: white;
+      border: solid 3px Black;
+      width: 430px;
+      height: 350px;
+      position: relative;
+      left:500px;
+      top:100px
+    }
+    .myform{
+      padding-left:20px;
+    }
+    label{
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+    input{
+      border: 1px solid dodgerblue;
+      height: 2em;
+      width: 90%;
+      margin-top: 20px;
+    }
+    button{
+      color:white;
+      background-color: green;
+      font-size: 1.2em;
+      width:90%;
+      padding: 5px;
+      border: 1px solid black;
+      margin-top:10px;
+    }
+    </style>
+<!-- __________________________________________________________________ -->
+  </head>
+  <body>
+    <div class="container">
+
+      <form class="myform" name="myform" action="index.html" method="post" onsubmit="return validateform()">
+        <h1>Online Quiz</h1>
+        <label>Registration no :</label><br>
+        <input type="text" name="regn_no" placeholder="Registration No."><br><br>
+        <label>Password :</label><br>
+        <input type="password" name="password" placeholder="Password"><br><br>
+        <button>Login</button>
+      </form>
+    </div>
+
+    <script>
+    // ---------------- Code For Form Validation ----------------------
+    function validateform(){
+      let regn_no = document.myform.regn_no.value;
+      let password = document.myform.password.value;
+
+      if(regn_no.match("11809203")){
+
+      }
+      else{
+        alert("Re-enter Registration no !");
+        return false;
+      }
+      if(password.match(1234)){
+
+      }
+      else{
+        alert("Re-enter Password !");
+        return false;
+      }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel='stylesheet' href="style.css">
+  </head>
+  <body>
+    <!-- Code For Question Page -->
+    <div class="box" id="question_page">
+
+      <div class="title">
+        Question no - <span></span>
+      </div>
+
+      <div class="header">
+        <div class="score-box">Correct :<span></span></div>
+        <div class="timer-box">Time Left : <span></span></div>
+      </div>
+
+      <div class="question-box"></div>
+      <div class="option-box">
+        <span onclick="check(this)"data-opt="1"></span>
+        <span onclick="check(this)"data-opt="2"></span>
+        <span onclick="check(this)"data-opt="3"></span>
+        <span onclick="check(this)"data-opt="4"></span>
+      </div>
+
+      <div class="bottom">
+        <button onclick="next()">Next</button>
+        <button onclick="show_result()">End Test</a>
+      </div>
+
+    </div>
+    <!-- Code For Result Page -->
+    <div class="box" id="result_page" style="display:none;">
+
+      <div class="title">Online Quiz Result</div>
+
+      <div class="result-box">
+        <label>Questions :</label>
+        <span id="total-questions">0</span>
+        <label>Attempted :</label>
+        <span id="attempt-questions">0</span>
+        <label>Correct :</label>
+        <span id="correct-questions">0</span>
+        <label>Incorrect :</label>
+        <span id="incorrect-questions">0</span>
+        <label>Negative Mark :</label>
+        <span id="negative_marks">0</span>
+        <label>Score :</label>
+        <span id="Score">0</span>
+      </div>
+
+     <a href="login-page.html">Log Out</a>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="mcq.js"></script>
+  <script src="script.js"></script>
+</html>
